@@ -21,7 +21,7 @@ export default class BinarySearchTree {
     }
     let current = this.rootNode;
     while (true) {
-      if (data === current.data) return; // дубликаты не добавляем
+      if (data === current.data) return; 
       if (data < current.data) {
         if (!current.left) {
           current.left = newNode;
